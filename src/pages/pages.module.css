@@ -1,0 +1,26 @@
+.trendingList {
+    list-style: none;
+}
+.searchForm {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.itemSearch {
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    width: 400px;
+}
+.itemSearch > img {
+    margin-left: 101px;
+}
+.itemCast {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    list-style: none;
+}
