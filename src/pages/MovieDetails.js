@@ -15,14 +15,16 @@ class MovieDetails extends Component {
       .getMovieDetails(this.state.id)
       .then(res => this.setState({ movieInfo: { ...res.data } }));
   }
-
   btnGoBack = () => {
     const { history, location } = this.props;
-    if (location.state) {
-      history.goBack();
+    if (location.state?.from) {
+      history.push(location.state.from);
       return;
     }
+
+    history.push(`?query=${location.state.from}`);
   };
+
   render() {
     const {
       original_title,
